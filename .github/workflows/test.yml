@@ -1,7 +1,7 @@
 name: GitHub Actions Demo
 on:
-  pull_request:
-    types: [ opened ]
+#  pull_request:
+#    types: [ opened ]
   workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
