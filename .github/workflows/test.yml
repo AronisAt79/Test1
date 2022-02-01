@@ -1,11 +1,13 @@
 name: GitHub Actions Demo
 on:
-#  pull_request:
-#    types: [ opened ]
   workflow_dispatch:
     inputs:
-      type: event-type
-      user: actor
+      event-type:
+        required: true
+        type: string
+      user:
+        required: true
+        type: string
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
