@@ -1,4 +1,4 @@
-tname: GitHub Actions Demo
+name: GitHub Actions Demo
 on:
   workflow_dispatch:
     inputs:
@@ -12,4 +12,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event, from event ${{ github.event.inputs.event-type }}."
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event, from event ${{ github.event.inputs.event-type }} and user ${{ github.event.inputs.ghuser }}."
