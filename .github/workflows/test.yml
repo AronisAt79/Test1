@@ -8,8 +8,11 @@ on:
       ghuser:
         required: true
         type: string
+      revision:
+        required: true
+        type: string
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event, from event ${{ github.event.inputs.event-type }} and user ${{ github.event.inputs.ghuser }}."
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event,as a ${{ github.event.inputs.event-type }} and user ${{ github.event.inputs.ghuser }}.halo2 version is ${{ github.event.inputs.revision }}"
