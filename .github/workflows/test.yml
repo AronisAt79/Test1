@@ -5,11 +5,11 @@ on:
       event-type:
         required: true
         type: string
-      user:
+      ghuser:
         required: true
         type: string
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event, from user ${{ github.event.inputs.user }}."
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event, from user ${{ github.event.inputs.ghuser }}."
